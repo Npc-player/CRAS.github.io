@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +17,15 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column; /* Altera a direção dos elementos para uma coluna */
+  align-items: center; /* Centraliza os elementos horizontalmente */
 }
 
 img {
   max-width: 100%;
   height: auto;
-  float: right;
-  margin: 0 0 20px 20px;
+  margin-bottom: 20px; /* Adiciona margem inferior para separar a imagem do texto */
 }
 
 .footer-img {
@@ -36,8 +38,8 @@ img {
 </head>
 <body>
 <div class="container">
-  <h1>O QUE É O CRAS?</h1>
   <img src="CRAS.png" alt="Imagem do CRAS">
+  <h1>O QUE É O CRAS?</h1>
   <p>O CRAS (Centro de Referência de Assistência Social) é uma instituição brasileira vinculada à política de assistência social do país. Ele é regulamentado por um conjunto de leis e normativas que estabelecem suas atribuições, funcionamento e diretrizes. As principais leis que regem o CRAS são:</p>
   <ul>
     <li>Lei Orgânica de Assistência Social (LOAS)</li>
