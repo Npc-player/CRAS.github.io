@@ -19,13 +19,11 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza os elementos verticalmente */
 }
 
 img {
   max-width: 100%;
   height: auto;
-  margin-right: 20px; /* Adiciona margem à direita para separar a imagem do texto */
 }
 
 h1 {
@@ -39,33 +37,38 @@ h1 {
   margin: 20px auto;
 }
 
-@media (max-width: 768px) {
-  img {
-    width: 50%; /* Reduz o tamanho da imagem para 50% em telas menores */
-    margin-right: 0; /* Remove a margem à direita em telas menores */
-    margin-bottom: 20px; /* Adiciona margem inferior para separar a imagem do texto em telas menores */
+@media (min-width: 769px) {
+  .container {
+    flex-direction: row; /* Alinha os elementos em linha no desktop */
+    align-items: flex-start; /* Alinha os elementos no topo */
   }
 
-  .img-container {
-    text-align: center; /* Centraliza a imagem no celular */
+  img {
+    width: 50%; /* Define a largura da imagem para 50% no desktop */
+    margin-right: 20px; /* Adiciona margem à direita da imagem para separar do texto */
+  }
+
+  h1 {
+    margin-top: 0; /* Remove a margem superior do título no desktop */
+    margin-left: 20px; /* Adiciona margem à esquerda do título para separar da imagem */
   }
 }
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="img-container">
-    <img src="CRAS.png" alt="Imagem do CRAS">
+  <img src="CRAS.png" alt="Imagem do CRAS">
+  <div>
+    <h1>O QUE É O CRAS?</h1>
+    <p>O CRAS (Centro de Referência de Assistência Social) é uma instituição brasileira vinculada à política de assistência social do país. Ele é regulamentado por um conjunto de leis e normativas que estabelecem suas atribuições, funcionamento e diretrizes. As principais leis que regem o CRAS são:</p>
+    <ul>
+      <li>Lei Orgânica de Assistência Social (LOAS)</li>
+      <li>Norma Operacional Básica do Sistema Único de Assistência Social (NOB/SUAS)</li>
+      <li>Resoluções do Conselho Nacional de Assistência Social (CNAS)</li>
+    </ul>
+    <p>Além dessas leis e normativas específicas, o CRAS também está sujeito a outras legislações mais amplas, como direitos humanos, proteção social, políticas públicas e administração pública.</p>
+    <p>É importante ressaltar que as leis e normativas que regem o CRAS podem sofrer atualizações ao longo do tempo, portanto é fundamental consultar as versões mais recentes dos documentos oficiais para compreender plenamente as regras que orientam o funcionamento e as atividades do CRAS.</p>
   </div>
-  <h1>O QUE É O CRAS?</h1>
-  <p>O CRAS (Centro de Referência de Assistência Social) é uma instituição brasileira vinculada à política de assistência social do país. Ele é regulamentado por um conjunto de leis e normativas que estabelecem suas atribuições, funcionamento e diretrizes. As principais leis que regem o CRAS são:</p>
-  <ul>
-    <li>Lei Orgânica de Assistência Social (LOAS)</li>
-    <li>Norma Operacional Básica do Sistema Único de Assistência Social (NOB/SUAS)</li>
-    <li>Resoluções do Conselho Nacional de Assistência Social (CNAS)</li>
-  </ul>
-  <p>Além dessas leis e normativas específicas, o CRAS também está sujeito a outras legislações mais amplas, como direitos humanos, proteção social, políticas públicas e administração pública.</p>
-  <p>É importante ressaltar que as leis e normativas que regem o CRAS podem sofrer atualizações ao longo do tempo, portanto é fundamental consultar as versões mais recentes dos documentos oficiais para compreender plenamente as regras que orientam o funcionamento e as atividades do CRAS.</p>
 </div>
 <img src="bar.gif" class="footer-img" alt="Imagem de rodapé">
 </body>
