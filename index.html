@@ -17,8 +17,6 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 img {
@@ -27,8 +25,7 @@ img {
 }
 
 h1 {
-  margin-top: 20px; /* Adiciona margem superior para separar o título da imagem */
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
 }
 
 .footer-img {
@@ -40,20 +37,18 @@ h1 {
 
 @media (min-width: 769px) {
   .container {
-    flex-direction: row; /* Alinha os elementos em linha no desktop */
-    align-items: flex-start; /* Alinha os elementos no topo */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   img {
-    width: 50%; /* Define a largura da imagem para 50% no desktop */
-    margin-right: 20px; /* Adiciona margem à direita da imagem para separar do texto */
+    width: 50%;
+    margin-right: 20px;
   }
 
   h1 {
-    margin-top: 0; /* Remove a margem superior do título no desktop */
-    margin-left: 20px; /* Adiciona margem à esquerda do título para separar da imagem */
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
   }
 }
 </style>
