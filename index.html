@@ -28,6 +28,7 @@ img {
 
 h1 {
   margin-top: 20px; /* Adiciona margem superior para separar o título da imagem */
+  text-align: center; /* Centraliza o texto */
 }
 
 .footer-img {
@@ -41,6 +42,7 @@ h1 {
   .container {
     flex-direction: row; /* Alinha os elementos em linha no desktop */
     align-items: flex-start; /* Alinha os elementos no topo */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
   }
 
   img {
@@ -51,13 +53,7 @@ h1 {
   h1 {
     margin-top: 0; /* Remove a margem superior do título no desktop */
     margin-left: 20px; /* Adiciona margem à esquerda do título para separar da imagem */
-  }
-}
-
-@media (max-width: 768px) {
-  img {
-    width: 50%; /* Define a largura da imagem para 50% no celular */
-    margin: 0 auto 20px auto; /* Centraliza a imagem e adiciona margem inferior para separar do texto */
+    text-align: left; /* Alinha o texto à esquerda */
   }
 }
 </style>
